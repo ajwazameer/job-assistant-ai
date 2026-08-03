@@ -1,0 +1,12 @@
+---
+description: Core rules for the AI Job Application Assistant project
+alwaysApply: true
+---
+- Tech stack is fixed: React+Vite+Tailwind+GSAP frontend, Node+Express+MongoDB backend, JWT auth, Groq for AI, Cloudinary for storage. Do not substitute any of these without asking.
+- Only touch files explicitly listed in the module spec pasted into chat. If another file seems needed, ask first instead of guessing.
+- Never install a new npm package without naming it and explaining why first.
+- Never run git commands without explicit confirmation.
+- Never delete or overwrite .env, package.json, or any config file without explicit confirmation.
+- Before importing any npm package, verify it's actually listed in package.json — don't assume from memory.
+- Keep explanations concise. Don't explain standard code patterns unless asked.
+- When a module is complete, summarize what was built and go through its acceptance checklist item by item before stopping.

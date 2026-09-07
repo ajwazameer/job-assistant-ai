@@ -1,13 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const dns = require("dns");
 
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const connectDB = async () => {
   const uri = process.env.MONGO_URI;
   if (!uri) {
-    throw new Error('MONGO_URI is not defined in environment variables');
+    throw new Error("MONGO_URI is not defined in environment variables");
   }
 
   await mongoose.connect(uri);
-  console.log('MongoDB connected');
+  console.log("MongoDB connected");
 };
 
 module.exports = connectDB;
